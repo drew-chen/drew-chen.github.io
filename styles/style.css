@@ -3,8 +3,8 @@ body  {
     background: #fbfbfb;
 }
 
-a {
-    outline: none;
+a, button {
+    outline: none !important;
 }
 
 /* || Header */
@@ -44,15 +44,17 @@ header {
 #scroll-up-icon > a:hover {
     color: #d9d9d9;
 }
+/* || Navbar */
+
+.navbar {
+    position: sticky;
+    background: transparent !important;
+}
+
 
 /* || About */
 
 #about {
     padding: 40px 20px 20px;
+    height: 100%;
 }
-
-#about img {
-    width: 100%;
-}
-
-/* || Navbar */
