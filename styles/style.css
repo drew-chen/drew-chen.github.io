@@ -65,3 +65,28 @@ header {
     padding: 40px 20px 20px;
     height: 100%;
 }
+
+#about ul {
+    list-style: none;
+    padding: 0;
+
+}
+#about ul {
+    position: relative;
+    left: 10px;
+}
+#about ul::before {
+    content: '';
+    background-color: #333;
+    display: inline-block;
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    z-index: 1px;
+    left: -10px;
+    border-radius: 4px;
+}
+/* #about .col-md-6::before { */
+    /* width: 2px;
+    display: inline-block;
+} */
