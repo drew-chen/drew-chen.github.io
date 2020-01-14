@@ -1,6 +1,13 @@
 /* || General styles */
 body  {
     background: #fbfbfb;
+    line-height: 1.4;
+    font-family: 'Varela Round', sans-serif;
+    color: #333;
+}
+
+h3 {
+    font-size: 1.5rem;
 }
 
 a, button {
@@ -14,7 +21,6 @@ a, button {
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
-    color: #333;
 }
 
 header {
@@ -44,6 +50,7 @@ header {
 #scroll-up-icon > a:hover {
     color: #d9d9d9;
 }
+
 /* || Navbar */
 
 .navbar {
