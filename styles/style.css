@@ -1,4 +1,7 @@
 /* || General styles */
+body  {
+    background: #fbfbfb;
+}
 
 a {
     outline: none;
@@ -36,7 +39,20 @@ header {
     }
 }
 #scroll-up-icon > a {
-    color: white;
+    color: #fbfbfb;
+}
+#scroll-up-icon > a:hover {
+    color: #d9d9d9;
+}
+
+/* || About */
+
+#about {
+    padding: 40px 20px 20px;
+}
+
+#about img {
+    width: 100%;
 }
 
 /* || Navbar */
