@@ -1,0 +1,24 @@
+/* || General styles */
+
+/* || Header */
+
+.user-box {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+header {
+    height: 100vh;
+    background: center/cover url(../images/background-top.jpg) no-repeat fixed;
+}
+
+header #scroll-up-icon {
+    bottom: 3%;
+    left: 50%;
+    position: absolute;
+    font-weight: bold;
+    font-size: 40px;
+}
+/* || Navbar */
