@@ -1,5 +1,9 @@
 /* || General styles */
 
+a {
+    outline: none;
+}
+
 /* || Header */
 
 .user-box {
@@ -7,6 +11,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
+    color: #333;
 }
 
 header {
@@ -14,11 +19,24 @@ header {
     background: center/cover url(../images/background-top.jpg) no-repeat fixed;
 }
 
-header #scroll-up-icon {
-    bottom: 3%;
+#scroll-up-icon {
+    bottom: 2%;
     left: 50%;
+    transform: translateX(-50%);
     position: absolute;
-    font-weight: bold;
-    font-size: 40px;
+    animation: up-and-down 3s infinite alternate;
 }
+
+@keyframes up-and-down {
+    from {
+        bottom: 3%;
+    }
+    top {
+        bottom: 1%;
+    }
+}
+#scroll-up-icon > a {
+    color: white;
+}
+
 /* || Navbar */
