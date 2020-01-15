@@ -8,9 +8,17 @@ body  {
 }
 
 section {
-    margin: 60px 0;
+    padding: 60px 0;
 }
 
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
 h3 {
     font-size: 1.5rem;
 }
@@ -119,7 +127,6 @@ header {
 }
 
 #projects h2 {
-    margin-top: 60px;
     margin-bottom: 40px;
     color: #333;
 }
@@ -160,3 +167,9 @@ header {
 }
 
 /* todo: add more hover animations. */
+
+/* || Resume */
+
+#resume h3, #resume h4 {
+    text-align: center;
+}
