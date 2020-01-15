@@ -113,18 +113,29 @@ header {
 #projects h3 {
     margin: 10px;
 }
-
 .project-info {
     padding: 10px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) content-box, url(../images/side.jpg) center/cover no-repeat padding-box content-box;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) border-box, url(../images/side.jpg) center/cover no-repeat padding-box border-box;
     background-origin: padding-box;
     height: 300px;
+    margin: 20px;
+    border-radius: 30px;
 }
 
-#projects p {
-    display: none;
+/* Todo: add a project id with an individualized background */
+
+#personal-website {
+    /* todo: fixed background of this website's code */
+    background: none; 
+    color: #333;
+
+}
+
+.project-info p {
+    opacity: 0;
+    transition: opacity 0.5s;
 }
 
 .project-info:hover p {
-    display: inline-block !important;
+    opacity: 1;
 }
