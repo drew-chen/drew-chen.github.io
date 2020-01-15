@@ -49,9 +49,8 @@ a, a:hover {
 
 header {
     height: 110vh;
-    background: #ee9ca7;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: rgb(166,255,250);
+    background: linear-gradient(25deg, rgba(166,255,250,1) 0%, rgba(255,150,182,1) 91%); 
     border-bottom-left-radius: 24px;
     border-bottom-right-radius: 24px;
 
@@ -145,12 +144,17 @@ header {
     padding: 0 5px;
 }
 #projects .card {
+    /* placeholder image */
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) border-box, url(../images/side.jpg) center/cover no-repeat padding-box padding-box;
     border-radius: 8px;
     margin: 5px 0;
     color: #fafafa;
+    height: 320px;
 }
 
+#projects .card:hover {
+    /* todo: make easier to read on hover */
+}
 
 /* Todo: add a project id with an individualized background */
 
@@ -172,7 +176,14 @@ header {
 #projects .card:hover p {
     opacity: 1;
 }
+/* todo: make this selector more elegant */
+#projects #this-website {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) border-box, url("../images/this-website.png") center/cover no-repeat content-box padding-box fixed;
+}
 
+#projects #sketch {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) border-box, url("../images/sketch.png") center/cover no-repeat content-box padding-box;
+}
 /* todo: add more hover animations. Open mini window? */
 
 /* || Resume */
@@ -182,6 +193,11 @@ header {
     margin: 20px;
 }
 
+#btn-resume:hover {
+    color: #fafafa;
+    background-color: pink;
+}
+
 .resume-subtitle {
     margin: 50px 0;
 }
@@ -189,9 +205,7 @@ header {
 #timeline {
     width: 150px;
     height: 80px;
-    background: pink;
-    /* background: rgb(166,255,250);
-    background: linear-gradient(25deg, rgba(166,255,250,1) 10%, rgba(205,68,202,1) 100%);  */
+    background: pink; 
     -ms-transform: rotate(270deg);
     -webkit-transform: rotate(270deg);
     transform: rotate(270deg) translateX(-100%);
