@@ -7,10 +7,18 @@ body  {
     color: #333;
 }
 
+section {
+    margin: 60px 0;
+}
+
 h3 {
     font-size: 1.5rem;
 }
 
+h4 {
+    font-size: 1.2rem;
+    color: darkgray;
+}
 a, button {
     outline: none !important;
 }
@@ -63,15 +71,16 @@ header {
     top: 0;
     position: sticky;
     background: transparent !important;
+    justify-content: end;
+    z-index: 2;
 }
 
 
 /* || About */
 
 #about {
-    padding: 40px 20px;
     height: 100%;
-    margin-bottom: 55px;
+    margin-top: 0;
 }
 
 #about img {
@@ -110,21 +119,24 @@ header {
 }
 
 #projects h2 {
-    margin: 50px;
+    margin-top: 60px;
+    margin-bottom: 40px;
     color: #333;
 }
 
 #projects h3 {
-    margin: 10px;
-}
-.project-info {
     padding: 10px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) border-box, url(../images/side.jpg) center/cover no-repeat padding-box border-box;
-    background-origin: padding-box;
-    height: 300px;
-    margin: 20px;
-    border-radius: 30px;
 }
+
+#projects .col-md-6 {
+    padding: 0 5px;
+}
+#projects .card {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) border-box, url(../images/side.jpg) center/cover no-repeat padding-box padding-box;
+    border-radius: 8px;
+    margin: 5px 0;
+}
+
 
 /* Todo: add a project id with an individualized background */
 
@@ -135,12 +147,15 @@ header {
 
 }
 
-.project-info p {
+#projects .card p {
     opacity: 0;
     transition: opacity 0.5s;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 10px;
 }
 
-.project-info:hover p {
+#projects .card:hover p {
     opacity: 1;
 }
 
