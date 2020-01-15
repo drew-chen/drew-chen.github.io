@@ -25,9 +25,10 @@ a, button {
 }
 
 header {
-    height: 100vh;
+    height: 110vh;
     background: url(../images/background-top.jpg) center/cover no-repeat fixed;
-
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
 
 }
 
@@ -47,7 +48,9 @@ header {
         bottom: 1%;
     }
 }
+
 #scroll-up-icon > a {
+    
     color: #fbfbfb;
 }
 #scroll-up-icon > a:hover {
@@ -68,14 +71,14 @@ header {
 #about {
     padding: 40px 20px;
     height: 100%;
-
+    margin-bottom: 55px;
 }
 
 #about img {
     height: 300px;
     width: 300px;
     object-fit: cover;
-
+    border-radius: 40px;
 }
 #about ul {
     list-style: none;
@@ -101,8 +104,9 @@ header {
 /* || Projects */
 
 #projects {
-    background: whitesmoke;
-    color: white;
+    background: #f1f1f1;
+    color: #fbfbfb;
+    border-radius: 24px;
 }
 
 #projects h2 {
@@ -139,3 +143,5 @@ header {
 .project-info:hover p {
     opacity: 1;
 }
+
+/* todo: add more hover animations. */
