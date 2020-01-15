@@ -8,7 +8,7 @@ body  {
 }
 
 *::selection{
-    background-color: bisque;
+    background-color: pink;
 }
 
 section {
@@ -44,11 +44,14 @@ a, a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
+    color: #fafafa;
 }
 
 header {
     height: 110vh;
-    background: url(../images/background-top.jpg) center/cover no-repeat fixed;
+    background: #ee9ca7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-bottom-left-radius: 24px;
     border-bottom-right-radius: 24px;
 
@@ -175,7 +178,7 @@ header {
 /* || Resume */
 
 #btn-resume {
-    border: 2px bisque solid;
+    border: 2px pink solid;
     margin: 20px;
 }
 
@@ -186,7 +189,7 @@ header {
 #timeline {
     width: 150px;
     height: 80px;
-    background: bisque;
+    background: pink;
     /* background: rgb(166,255,250);
     background: linear-gradient(25deg, rgba(166,255,250,1) 10%, rgba(205,68,202,1) 100%);  */
     -ms-transform: rotate(270deg);
@@ -201,5 +204,6 @@ header {
 #contact {
     background-color: #333;
     color: #fafafa;
-
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
 }
