@@ -26,7 +26,7 @@ a, button {
 
 header {
     height: 100vh;
-    background: center/cover url(../images/background-top.jpg) no-repeat fixed;
+    background: url(../images/background-top.jpg) center/cover no-repeat fixed;
 
 
 }
@@ -102,18 +102,29 @@ header {
 
 #projects {
     background: whitesmoke;
+    color: white;
 }
 
 #projects h2 {
     margin: 50px;
-    padding: 0;
+    color: #333;
 }
 
+#projects h3 {
+    margin: 10px;
+}
 
-#projects img {
-    width: 600px;
+.project-info {
+    padding: 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) content-box, url(../images/side.jpg) center/cover no-repeat padding-box content-box;
+    background-origin: padding-box;
     height: 300px;
-    object-fit: cover;
-    margin: 20px;
 }
 
+#projects p {
+    display: none;
+}
+
+.project-info:hover p {
+    display: inline-block !important;
+}
