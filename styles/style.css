@@ -1,4 +1,5 @@
 /* || General styles */
+
 body  {
     background: #fbfbfb;
     line-height: 1.4;
@@ -26,6 +27,8 @@ a, button {
 header {
     height: 100vh;
     background: center/cover url(../images/background-top.jpg) no-repeat fixed;
+
+
 }
 
 #scroll-up-icon {
@@ -54,6 +57,7 @@ header {
 /* || Navbar */
 
 .navbar {
+    top: 0;
     position: sticky;
     background: transparent !important;
 }
@@ -62,10 +66,17 @@ header {
 /* || About */
 
 #about {
-    padding: 40px 20px 20px;
+    padding: 40px 20px;
     height: 100%;
+
 }
 
+#about img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+
+}
 #about ul {
     list-style: none;
     padding: 0;
@@ -86,7 +97,23 @@ header {
     left: -10px;
     border-radius: 4px;
 }
-/* #about .col-md-6::before { */
-    /* width: 2px;
-    display: inline-block;
-} */
+
+/* || Projects */
+
+#projects {
+    background: whitesmoke;
+}
+
+#projects h2 {
+    margin: 50px;
+    padding: 0;
+}
+
+
+#projects img {
+    width: 600px;
+    height: 300px;
+    object-fit: cover;
+    margin: 20px;
+}
+
