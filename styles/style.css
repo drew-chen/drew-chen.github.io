@@ -1,7 +1,7 @@
 /* || General styles */
 
 body  {
-    background: #fbfbfb;
+    background: #fafafa;
     line-height: 1.4;
     font-family: 'Varela Round', sans-serif;
     color: #333;
@@ -67,7 +67,7 @@ header {
 
 #scroll-up-icon > a {
     
-    color: #fbfbfb;
+    color: #fafafa;
 }
 #scroll-up-icon > a:hover {
     color: #d9d9d9;
@@ -97,15 +97,18 @@ header {
     object-fit: cover;
     border-radius: 40px;
 }
+
 #about ul {
     list-style: none;
     padding: 0;
 
 }
+
 #about ul {
     position: relative;
     left: 10px;
 }
+
 #about ul::before {
     content: '';
     background-color: #333;
@@ -122,7 +125,7 @@ header {
 
 #projects {
     background: #f1f1f1;
-    color: #fbfbfb;
+    color: #fafafa;
     border-radius: 24px;
 }
 
@@ -170,6 +173,19 @@ header {
 
 /* || Resume */
 
-#resume h3, #resume h4 {
-    text-align: center;
+#btn-resume {
+    border: 2px bisque solid;
+    margin: 20px;
 }
+
+#timeline {
+    width: 150px;
+    height: 80px;
+    background: bisque;
+    /* background: rgb(166,255,250);
+    background: linear-gradient(25deg, rgba(166,255,250,1) 10%, rgba(205,68,202,1) 100%);  */
+    -ms-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg) translateX(-100%);
+    display: inline-block;
+  } 
