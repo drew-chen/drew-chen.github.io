@@ -90,9 +90,14 @@ header {
     position: sticky;
     background: transparent !important;
     justify-content: end;
-    z-index: 2;
+    z-index: 3;
 }
 
+@media only screen and (max-width: 767.98px) {
+    .navbar {
+        background-color: #fafafa !important;
+    }
+}
 
 /* || About */
 
@@ -210,7 +215,6 @@ header {
     -ms-transform: rotate(270deg);
     -webkit-transform: rotate(270deg);
     transform: rotate(270deg) translateX(-100%);
-    display: inline-block;
     border-radius: 5px;
 } 
 
