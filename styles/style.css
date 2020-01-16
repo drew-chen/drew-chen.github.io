@@ -61,7 +61,7 @@ header {
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
-    animation: up-and-down 3s infinite alternate;
+    animation: 3s linear 0.1s infinite alternate up-and-down;
 }
 
 @keyframes up-and-down {
@@ -241,18 +241,6 @@ header {
     margin: 50px 0;
 }
 
-#timeline {
-    width: 150px;
-    height: 80px;
-    background: rgb(233,255,254);
-    background: linear-gradient(25deg, rgba(233,255,254,1) 0%, rgba(255,217,228,1) 100%) fixed; 
-    -ms-transform: rotate(270deg);
-    -webkit-transform: rotate(270deg);
-    transform: rotate(270deg) translateX(-100%);
-    border-radius: 3px;
-} 
-
-
 #resume ul {
     list-style: none;
     padding: 0;
@@ -271,7 +259,6 @@ header {
     left: -9px;
     border-radius: 4px;
 }
-
 
 /* || Contact */
 
