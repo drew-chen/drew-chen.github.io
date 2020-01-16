@@ -185,7 +185,7 @@ header {
     padding: 0 4px;
 }
 #this-website {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) border-box, url("../images/this-website.png") center/cover no-repeat content-box content-box fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) border-box, url("../images/this-website.png") top/80% no-repeat content-box content-box fixed;
     /* margin: 0 5px; */
     width: 100%;
 }
