@@ -27,7 +27,7 @@
     </header>
     
     <!-- navbar -->
-
+    <!-- todo: non-transparent background when small -->
     <nav class="navbar navbar-expand-md navbar-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <i class="las la-ellipsis-v"></i>
@@ -79,7 +79,7 @@
             </div>
             <div class="row">
                 <div class="col-md-6 col-sm-12">
-                    <div class="card">
+                    <div id="social-network" class="card">
                         <h3 class="card-title">Social Network</h3>
                         <!-- todo: pop up with more detail -->
                         <p class="card-text">
@@ -90,8 +90,8 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12">
-                    <div class="card">
-                        <h3 class="card-title">Gitlet</h3>
+                    <div id="git" class="card">
+                        <h3 class="card-title">Git</h3>
                         <p class="card-text">
                             Reinforced version-control skills by building a simplified version of Git<br>
                             Implemented Git features including conflict resolution, merge , checkout, and branch<br>
@@ -112,7 +112,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12">
-                    <div class="card">
+                    <div id="cipher-machine" class="card">
                         <h3 class="card-title">Cipher Machine</h3>
                         <p class="card-text">
                             Built a reciprocal cipher with more than 1.5e+20 possible configurations that can encode and decode text<br>
@@ -122,15 +122,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6 col-sm-12">
-                    <div class="card">
-                        <h3 class="card-title">Type Racer</h3>
-                        <p class="card-text">
-                            Wrote a program that can autocorrect typos as well as compute both typing speed and accuracy
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12">
+                <div id="this-website-box" class="col-sm-12">
                     <div id="this-website" class="card">
                         <h3 class="card-title">This website</h3>
                         <p class="card-text">
@@ -153,7 +145,8 @@
         </div>
         <h3 class="text-center resume-subtitle">Education</h3>
         <div class="row">
-            <div class="col-md-2 align-self-center">
+            <!-- todo: make timeline element disappear if small screen -->
+            <div class="col-md-2 d-sm-none align-self-center">
                 <h2 id="timeline">timeline</h2>
             </div>
             <div class="col-md-6">

@@ -124,7 +124,6 @@ header {
 }
 #projects .card {
     /* placeholder image */
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) border-box, url(../images/side.jpg) center/cover no-repeat padding-box padding-box;
     border-radius: 8px;
     margin: 5px 0;
     color: #fafafa;
@@ -144,6 +143,10 @@ header {
 
 }
 
+#projects .card {
+    cursor: pointer;
+}
+
 #projects .card p {
     opacity: 0;
     transition: opacity 0.5s;
@@ -155,14 +158,33 @@ header {
 #projects .card:hover p {
     opacity: 1;
 }
-/* todo: make this selector more elegant */
-#projects #this-website {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) border-box, url("../images/this-website.png") center/cover no-repeat content-box padding-box fixed;
+
+#social-network {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) border-box, url("../images/social-network.png") top/cover no-repeat content-box padding-box;
+
 }
 
-#projects #sketch {
+#git {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) border-box, url("../images/git.png") center/cover no-repeat content-box padding-box;
+
+}
+
+#sketch {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) border-box, url("../images/sketch.png") center/cover no-repeat content-box padding-box;
 }
+
+#cipher-machine {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) border-box, url("../images/cipher-machine.svg") center/cover no-repeat content-box padding-box;
+}
+#this-website-box {
+    padding: 0 4px;
+}
+#this-website {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) border-box, url("../images/this-website.png") center/cover no-repeat content-box content-box fixed;
+    /* margin: 0 5px; */
+    width: 100%;
+}
+
 /* todo: add more hover animations. Open mini window? */
 
 /* || Resume */
