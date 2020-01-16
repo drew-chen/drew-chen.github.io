@@ -33,10 +33,6 @@ h4 {
     color: darkgray;
 }
 
-a, a:hover {
-    color: palevioletred;
-    /* text-decoration: underline; */
-}
 
 /* || Header */
 
@@ -46,7 +42,6 @@ a, a:hover {
     transform: translate(-50%, -50%);
     position: absolute;
     color: #fafafa;
-    /* text-align: center; */
 }
 
 header {
@@ -76,9 +71,9 @@ header {
 }
 
 #scroll-up-icon > a {
-    
     color: #fafafa;
 }
+
 #scroll-up-icon > a:hover {
     color: #d9d9d9;
 }
@@ -104,6 +99,10 @@ header {
 #about {
     height: 100%;
     padding-top: 0;
+}
+
+#about a {
+    color: palevioletred;
 }
 
 #about img {
@@ -196,12 +195,21 @@ header {
 
 #btn-resume {
     border: 2px pink solid;
+    border: 2px linear-gradient(25deg, rgba(166,255,250,1) 0%, rgba(255,150,182,1) 91%) solid; 
+
     margin: 20px;
 }
 
+#btn-resume::before {
+    background: linear-gradient(25deg, rgba(166,255,250,1) 0%, rgba(255,150,182,1) 91%) fixed; 
+    margin: 10px;
+}
+
 #btn-resume:hover {
-    color: #fafafa;
+    /* color: #fafafa; */
     background-color: palevioletred;
+    background: linear-gradient(25deg, rgba(166,255,250,1) 0%, rgba(255,150,182,1) 91%) fixed; 
+
 }
 
 .resume-subtitle {
@@ -211,7 +219,8 @@ header {
 #timeline {
     width: 150px;
     height: 80px;
-    background: palevioletred; 
+    background: rgb(233,255,254);
+    background: linear-gradient(25deg, rgba(233,255,254,1) 0%, rgba(255,217,228,1) 100%); 
     -ms-transform: rotate(270deg);
     -webkit-transform: rotate(270deg);
     transform: rotate(270deg) translateX(-100%);
@@ -223,27 +232,33 @@ header {
     list-style: none;
     padding: 0;
     position: relative;
-    left: 10px;
+    left: 11px;
 }
 
 #resume ul::before {
     content: '';
-    background-color: #333;
+    background: #333;
     display: inline-block;
     position: absolute;
-    width: 2px;
+    width: 1px;
     height: 100%;
     z-index: 1px;
-    left: -10px;
+    left: -9px;
     border-radius: 4px;
 }
 
 
 /* || Contact */
 
+
 #contact {
-    background-color: #333;
-    color: #fafafa;
+    background: rgb(127,213,213);
+    background: linear-gradient(165deg, rgba(127,213,213,1) 0%, rgba(255,110,148,1) 100%); 
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
+    color: #fafafa;
+}
+
+#contact a {
+    color: #fafafa;
 }
