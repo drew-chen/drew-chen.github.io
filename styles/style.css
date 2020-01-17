@@ -163,17 +163,9 @@ header {
     /* todo: make easier to read on hover */
 }
 
-/* Todo: add a project id with an individualized background */
-
 #personal-website {
-    /* todo: fixed background of this website's code */
     background: none; 
     color: #333;
-}
-
-#projects .card {
-    /* todo: add button functionality */
-    /* cursor: pointer; */
 }
 
 #projects .card p {
@@ -212,8 +204,6 @@ header {
     /* margin: 0 5px; */
     width: 100%;
 }
-
-/* todo: add more hover animations. Open mini window? */
 
 /* || Resume */
 
