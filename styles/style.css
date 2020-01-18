@@ -208,6 +208,10 @@ header {
 
 /* || Project descriptions modals */
 
+.modal a {
+    color: palevioletred;   
+}
+
 .modal-content {
     height: 100vh;
     border: none;
