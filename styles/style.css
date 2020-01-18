@@ -1,10 +1,17 @@
 /* || General styles */
 
 body  {
-    background: #fafafa;
     line-height: 1.4;
     font-family: 'Varela Round', sans-serif;
     color: #333;
+    background: #fafafa;
+
+}
+
+/* Everything wrapped by this element is on top of the footer */
+main {
+    background: #fafafa;
+    margin-bottom: 200px;
 }
 
 *::selection{
@@ -213,7 +220,6 @@ header {
 
 #btn-resume {
     padding: 0;
-    margin: 0;
     background-color: palevioletred;
     background: linear-gradient(25deg, rgba(166,255,250,1) 0%, rgba(255,150,182,1) 91%) fixed;
     background-clip: border-box;
@@ -252,18 +258,16 @@ header {
 
 /* || Contact */
 
-#contact {
-    border-top-left-radius: 24px;
-    border-top-right-radius: 24px;
+footer {
+    background: #fafafa;
     color: #fafafa;
     background: #333;
-}
-
-#contact .gradient {
-    color: #fafafa;
+    z-index: -1;
+    position: fixed;
+    bottom: 0;
     width: 100%;
 }
 
-#contact a {
+footer a {
     color: #fafafa;
 }
