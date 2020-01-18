@@ -14,6 +14,12 @@ main {
     margin-bottom: 200px;
 }
 
+@media only screen and (max-width: 767.98px) {
+    main {
+        margin-bottom: 300px;
+    }
+}
+
 *::selection{
     background-color: pink;
 }
@@ -259,6 +265,7 @@ header {
 /* || Contact */
 
 footer {
+    height: 200px;
     background: #fafafa;
     color: #fafafa;
     background: #333;
@@ -266,8 +273,19 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    padding-top: 10px;
+}
+
+@media only screen and (max-width: 767.98px) {
+    footer {
+        height: 300px;
+    }
 }
 
 footer a {
     color: #fafafa;
+}
+
+footer p {
+    margin: 0;
 }
