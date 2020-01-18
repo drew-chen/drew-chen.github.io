@@ -89,7 +89,7 @@ header {
     position: sticky;
     background: transparent !important;
     justify-content: end;
-    z-index: 3;
+    z-index: 2;
 }
 
 @media only screen and (max-width: 767.98px) {
@@ -151,6 +151,7 @@ header {
 #projects .col-md-6 {
     padding: 0 5px;
 }
+
 #projects .card {
     border: none;
     border-radius: 3px;
@@ -158,6 +159,27 @@ header {
     color: #fafafa;
     height: 320px;
     cursor: pointer;
+}
+
+/* todo: figure out how to add blur */
+/* #projects .card::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.733);
+    filter: blur(2px);
+    z-index: 2;
+} */
+
+#projects .card-title {
+    position: relative;
+}
+
+#projects .card-text {
+    position: absolute;
+    bottom: 0;
 }
 
 #projects .card:hover {
