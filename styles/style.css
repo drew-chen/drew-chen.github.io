@@ -157,6 +157,7 @@ header {
     margin: 5px 0;
     color: #fafafa;
     height: 320px;
+    cursor: pointer;
 }
 
 #projects .card:hover {
