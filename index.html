@@ -76,28 +76,21 @@
                 <div class="col-md-12 text-center">
                     <h2>Projects</h2>
                     <p>
-                
+                        
                     </p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 col-sm-12">
                     <div id="social-network" class="card" data-toggle="modal" data-target="#social-network-description">
-                        <!-- todo: pop up with more detail -->
-                        <p class="card-text">
-                            Ruby on Rails, HTML, CSS, Bootstrap
-                        </p>
+                        <h3>Social Network</h3>
+                        <p class="card-text">Ruby on Rails, HTML, CSS, Bootstrap</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12">
-                    <div id="git" class="card">
+                    <div id="git" class="card" data-toggle="modal" data-target="#git-description">
                         <h3 class="card-title">Git</h3>
-                        <p class="card-text">
-                            Reinforced version-control skills by building a simplified version of Git<br>
-                            Implemented Git features including conflict resolution, merge , checkout, and branch<br>
-                            Organized development by writing a detailed technical specification and systematic automatic tests<br>
-                            Strengthened concepts on serialization, Git internals, file I/O, and hashing on an intimate level
-                        </p>
+                        <p class="card-text">Java</p>
                     </div>
                 </div>
             </div>
@@ -144,33 +137,67 @@
     </div>
 
     <div class="container">
-
-        <!-- Modal -->
         <div class="modal" id="social-network-description" role="dialog">
-          <div class="modal-dialog modal-lg">
-          
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Social Network</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                    <div class="modal-body d-flex align-items-center">
-                    <h3>Summary</h3>
-                    <ul>
-                        <li>Collaborated with partners using Git and Github to create a social media website</li>
-                        <li>Implemented CRUD operations for posts, messages, and comments</li>
-                        <li>Developed front-end with HTML/CSS and Bootstrap</li>
-                    </ul>
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Social Network</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
-                <div class="modal-footer">
-                    <p>private repo: contact for code</p>
+                        <div class="modal-body align-items-end">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h3>Summary</h3>
+                                </div>
+                                <div class="col-md-10">
+                                    <ul>
+                                        <li>Collaborated with partners using Git and Github to create a social media website</li>
+                                        <li>Implemented CRUD operations for posts, messages, and comments</li>
+                                        <li>Developed front-end with HTML/CSS and Bootstrap</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-2">
+                                    <h3>Skills</h3>
+                                </div>
+                                <div class="col-md-10">
+                                    <ul><li>Ruby on Rails, HTML, CSS, Bootstrap</li></ul>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="modal-footer">
+                        <a href="https://github.com/rails-decal/fa19-proj2-team-b" target="_blank">view code</a>
+                    </div>
                 </div>
             </div>
-          </div>
-        </div>
-        
-      </div>
+        </div>      
+    </div>
+
+    <div class="container">
+        <div class="modal" id="git-description" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 claImplemented Git features including conflict resolution, merge , checkout, and branchss="modal-title">Social Network</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                   <div class="modal-body d-flex align-items-center">
+                        <h3>Summary</h3>
+                        <ul>
+                            <li>Reinforced version-control skills by building a simplified version of Git</li>
+                            <li>Implemented Git features including conflict resolution, merge , checkout, and branch</li>
+                            <li>Organized development by writing a detailed technical specification and systematic automatic tests</li>
+                            <li>Strengthened concepts on serialization, Git internals, file I/O, and hashing on an intimate level</li>
+                        </ul>
+                        </div>
+                    <div class="modal-footer">
+                        <p>private repo: contact for code</p>
+                    </div>
+                </div>
+            </div>
+        </div>      
+    </div>
+                            
+
     <!-- resume -->
 
     <section id="resume"> 
