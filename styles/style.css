@@ -159,52 +159,59 @@ header {
     color: #fafafa;
     height: 320px;
     cursor: pointer;
+    overflow: hidden;
 }
 
-/* todo: figure out how to add blur */
-/* #projects .card::before {
+#projects .project-title {
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.733);
-    filter: blur(2px);
-    z-index: 2;
-} */
-
-#projects .card-title {
-    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%); /* IE 9 */
+    -webkit-transform: translate(-50%, -50%); /* Safari prior 9.0 */
+    transform: translate(-50%, -1.5rem);
+    z-index: 1;
 }
 
-#projects .card-text {
-    position: absolute;
-    bottom: 0;
-}
-
-#projects .card:hover {
-    /* todo: make easier to read on hover */
-}
-
-#personal-website {
-    background: none; 
-    color: #333;
-}
-
-#projects .card p {
+#projects .card .card-text {
     opacity: 0;
     transition: opacity 0.5s;
     font-size: 1.2rem;
-    margin: 0;
     padding: 10px;
 }
 
-#projects .card:hover p {
+#projects .card:hover .card-text {
     opacity: 1;
 }
 
+.project-background p {
+    transition: none;
+}
+
+.project-background {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-size: cover;
+    -webkit-transition: all 0.5s ease; /* Safari and Chrome */
+    -moz-transition: all 0.5s ease; /* Firefox */
+    -ms-transition: all 0.5s ease; /* IE 9 */
+    -o-transition: all 0.5s ease; /* Opera */
+    transition: all 0.5s ease;
+}
+
+.card:hover .project-background {
+    -webkit-transform:scale(1.03); /* Safari and Chrome */
+    -moz-transform:scale(1.03); /* Firefox */
+    -ms-transform:scale(1.03); /* IE 9 */
+    -o-transform:scale(1.03); /* Opera */
+    transform:scale(1.03);
+    filter: blur(2px);
+}
+
 #social-network {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) border-box, url("../images/social-network.png") top/cover no-repeat content-box padding-box;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../images/social-network.jpg");
 
 }
 
@@ -224,7 +231,7 @@ header {
 }
 #this-website {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) border-box, url("../images/this-website.png") top/80% no-repeat content-box content-box fixed;
-    /* margin: 0 5px; */
+    margin: 0 5px;
     width: 100%;
 }
 
@@ -247,7 +254,6 @@ header {
 .modal-content ul {
     display: table;
     list-style-position: outside;
-
 }
 
 .modal-content li {
