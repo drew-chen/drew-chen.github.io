@@ -14,7 +14,9 @@ is a work in progress.
 * Create contact form
 * Copy and paste on clicking contact information
 * Smoothen animation for the header's scroll up button
+* Improve compatibility on older versions
 * Update 'this-website' project preview as final step
+
 
 
 
