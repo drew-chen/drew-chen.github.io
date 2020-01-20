@@ -23,7 +23,7 @@ let main = document.querySelector("main");
 
 function openModal () {
     main.style.filter = "blur(2px)";
-    callWhenLoaded(".modal.show .close", backDrop => {
+    callWhenLoaded(".modal.show", backDrop => {
         backDrop.onclick = () => {main.style.filter = "none"};
     });
 }
