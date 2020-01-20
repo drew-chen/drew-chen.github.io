@@ -188,6 +188,8 @@ header {
 }
 
 .project-background {
+    width: 100%;
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-clip: content-box;
@@ -197,42 +199,40 @@ header {
     -ms-transition: all 0.5s ease; /* IE 9 */
     -o-transition: all 0.5s ease; /* Opera */
     transition: all 0.5s ease;
+    filter: brightness(65%);
 }
 
 .card:hover .project-background {
-    -webkit-transform:scale(1.03); /* Safari and Chrome */
-    -moz-transform:scale(1.03); /* Firefox */
-    -ms-transform:scale(1.03); /* IE 9 */
-    -o-transform:scale(1.03); /* Opera */
-    transform:scale(1.03);
-    filter: blur(2px);
+    -webkit-transform: scale(1.03); /* Safari and Chrome */
+    -moz-transform: scale(1.03); /* Firefox */
+    -ms-transform: scale(1.03); /* IE 9 */
+    -o-transform: scale(1.03); /* Opera */
+    transform: scale(1.03);
+    filter: blur(2px) brightness(65%);
 }
 
 #social-network {
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../images/social-network.jpg");
-
+    background-image: url("../images/social-network.jpg");
 }
 
 #git {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) border-box, url("../images/git.png") center/cover no-repeat content-box padding-box;
+    background-image: url("../images/git.png");
 }
 
 #sketch {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) border-box, url("../images/sketch.png") center/cover no-repeat content-box padding-box;
+    background-image: url("../images/sketch.png") ;
 }
 
 #cipher-machine {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) border-box, url("../images/cipher-machine.svg") center/cover no-repeat content-box padding-box;
+    background-image: url("../images/cipher-machine.jpg");
 }
+
 #this-website-box {
     padding: 0 4px;
 }
+
 #this-website {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) border-box, url("../images/this-website.png") top/80% no-repeat content-box content-box fixed;
-    margin: 0 5px;
-    width: 100%;
+    background: url("../images/this-website.png") center/contain fixed no-repeat;
 }
 
 /* || Project descriptions modals */
