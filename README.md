@@ -7,7 +7,6 @@ is a work in progress.
 ## todo
 
 * project descriptions:
-    - extra: use github api to show most recent README.md 
     - navigation buttons between modals  
 * Fix resume button animation when not in full screen
 * Create contact form

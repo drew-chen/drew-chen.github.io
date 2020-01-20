@@ -165,6 +165,7 @@ header {
 
 #projects h3 {
     padding: 10px;
+    text-transform: lowercase;
 }
 
 #projects .col-md-6 {
