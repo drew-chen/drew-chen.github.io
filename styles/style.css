@@ -1,10 +1,23 @@
 /* || General styles */
 
 body  {
-    background: #fafafa;
     line-height: 1.4;
     font-family: 'Varela Round', sans-serif;
     color: #333;
+    background: #fafafa;
+
+}
+
+/* Everything wrapped by this element is on top of the footer */
+main {
+    background: #fafafa;
+    margin-bottom: 200px;
+}
+
+@media only screen and (max-width: 767.98px) {
+    main {
+        margin-bottom: 300px;
+    }
 }
 
 *::selection{
@@ -49,11 +62,17 @@ h4 {
 
 header {
     height: 110vh;
-    background: rgb(166,255,250);
-    background: linear-gradient(25deg, rgba(166,255,250,1) 0%, rgba(255,150,182,1) 91%) fixed; 
+    background: #fafafa;
+}
+
+/* Curve child of header instead of header to prevent footer from showing. */
+.curve-bottom {
+    height: 100%;
+    width: 100%;
     border-bottom-left-radius: 24px;
     border-bottom-right-radius: 24px;
-
+    background: rgb(166,255,250);
+    background: linear-gradient(25deg, rgba(166,255,250,1) 0%, rgba(255,150,182,1) 91%) fixed; 
 }
 
 #scroll-up-icon {
@@ -284,6 +303,14 @@ header {
     padding: 0;
 }
 
+.modal-content {
+    padding: 0 30px;
+}
+
+.modal-footer {
+    justify-content: center;
+}
+
 /* || Resume */
 
 #resume .container {
@@ -292,7 +319,6 @@ header {
 
 #btn-resume {
     padding: 0;
-    margin: 0;
     background-color: palevioletred;
     background: linear-gradient(25deg, rgba(166,255,250,1) 0%, rgba(255,150,182,1) 91%) fixed;
     background-clip: border-box;
@@ -331,26 +357,31 @@ header {
 
 /* || Contact */
 
-#contact {
-    border-top-left-radius: 24px;
-    border-top-right-radius: 24px;
+footer {
+    height: 200px;
+    background: #fafafa;
     color: #fafafa;
     background: #333;
-}
-
-#contact .gradient {
-    color: #fafafa;
+    z-index: -1;
+    position: fixed;
+    bottom: 0;
     width: 100%;
+    padding-top: 10px;
 }
 
-#contact a {
+@media only screen and (max-width: 767.98px) {
+    footer {
+        height: 300px;
+    }
+}
+
+footer a {
     color: #fafafa;
 }
 
-.modal-content {
-    padding: 0 30px;
+footer a:hover {
+    color: palevioletred;
 }
-
-.modal-footer {
-    justify-content: center;
+footer p {
+    margin: 0;
 }

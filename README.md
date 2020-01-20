@@ -6,8 +6,7 @@ is a work in progress.
 
 ## todo
 
-* Language listed at the bottom of project preview
-* Modal providing greater detail for each project
+* project descriptions:
     - extra: use github api to show most recent README.md 
     - navigation buttons between modals  
 * Fix resume button animation when not in full screen
