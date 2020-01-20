@@ -234,7 +234,7 @@ header {
 #this-website {
     width: 100%;
     height: 100%;
-    background: url("../images/Screenshot\ \(83\).png") center/cover fixed no-repeat;
+    background: url("../images/this-website.png") center/cover fixed no-repeat;
     -webkit-transition: all 0.5s ease; /* Safari and Chrome */
     -moz-transition: all 0.5s ease; /* Firefox */
     -ms-transition: all 0.5s ease; /* IE 9 */
