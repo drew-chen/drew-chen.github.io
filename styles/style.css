@@ -5,7 +5,6 @@ body  {
     font-family: 'Varela Round', sans-serif;
     color: #333;
     background: #fafafa;
-
 }
 
 /* Everything wrapped by this element is on top of the footer */
@@ -61,18 +60,23 @@ h4 {
 }
 
 header {
-    height: 110vh;
+    min-height: 110vh;
     background: #fafafa;
 }
 
 /* Curve child of header instead of header to prevent footer from showing. */
 .curve-bottom {
-    height: 100%;
+    height: 110vh;
     width: 100%;
     border-bottom-left-radius: 24px;
     border-bottom-right-radius: 24px;
     background: rgb(166,255,250);
-    background: linear-gradient(25deg, rgba(166,255,250,1) 0%, rgba(255,150,182,1) 91%) fixed; 
+    background: -moz-linear-gradient(25deg, rgba(166,255,250,1) 0%, rgba(255,150,182,1) 91%) no-repeat;
+    background: -webkit-gradient(25deg, rgba(166,255,250,1) 0%, rgba(255,150,182,1) 91%) fixed;
+    background: -webkit-linear-gradient(25deg, rgba(166,255,250,1) 0%, rgba(255,150,182,1) 91%) no-repeat;
+    background: -o-linear-gradient(25deg, rgba(166,255,250,1) 0%, rgba(255,150,182,1) 91%) no-repeat;
+    background: -ms-linear-gradient(25deg, rgba(166,255,250,1) 0%, rgba(255,150,182,1) 91%) no-repeat;
+    background: linear-gradient(25deg, rgba(166,255,250,1) 0%, rgba(255,150,182,1) 91%) no-repeat; 
 }
 
 #scroll-up-icon {
@@ -136,7 +140,11 @@ header {
     border-radius: 5px;
     visibility: hidden;
     transform: scaleX(0);
-    transition: all 0.3s ease-in-out;
+    -webkit-transition: transform 0.3s ease-in-out; /* Safari and Chrome */
+    -moz-transition: transform 0.3s ease-in-out; /* Firefox */
+    -ms-transition: transform 0.3s ease-in-out; /* IE 9 */
+    -o-transition: transform 0.3s ease-in-out; /* Opera */
+    transition: transform 0.3s ease-in-out;
 }
 
 .middle-underline.active::before {
@@ -193,7 +201,7 @@ header {
 
 #projects .card .card-text {
     opacity: 0;
-    transition: opacity 0.5s;
+    transition: all 0.5s;
     font-size: 1.2rem;
     padding: 10px;
 }
@@ -213,11 +221,11 @@ header {
     background-repeat: no-repeat;
     background-clip: content-box;
     background-size: cover;
-    -webkit-transition: all 0.5s ease; /* Safari and Chrome */
-    -moz-transition: all 0.5s ease; /* Firefox */
-    -ms-transition: all 0.5s ease; /* IE 9 */
-    -o-transition: all 0.5s ease; /* Opera */
-    transition: all 0.5s ease;
+    -webkit-transition: filter 0.5s ease, transform 0.5s ease; /* Safari and Chrome */
+    -moz-transition: filter 0.5s ease, transform 0.5s ease; /* Firefox */
+    -ms-transition: filter 0.5s ease, transform 0.5s ease; /* IE 9 */
+    -o-transition: filter 0.5s ease, transform 0.5s ease; /* Opera */
+    transition: filter 0.5s ease, transform 0.5s ease;
     filter: brightness(65%);
 }
 
@@ -227,7 +235,8 @@ header {
     -ms-transform: scale(1.03); /* IE 9 */
     -o-transform: scale(1.03); /* Opera */
     transform: scale(1.03);
-    filter: blur(2px) brightness(65%);
+    /* brightness must be first to prevent flickering in Microsoft Edge */
+    filter: brightness(65%) blur(2px);
 }
 
 #social-network {
@@ -320,16 +329,30 @@ header {
 #btn-resume {
     padding: 0;
     background-color: palevioletred;
-    background: linear-gradient(25deg, rgba(166,255,250,1) 0%, rgba(255,150,182,1) 91%) fixed;
+    background: -moz-linear-gradient(25deg, rgba(166,255,250,1) 0%, rgba(255,150,182,1) 91%) no-repeat;
+    background: -webkit-gradient(25deg, rgba(166,255,250,1) 0%, rgba(255,150,182,1) 91%) fixed;
+    background: -webkit-linear-gradient(25deg, rgba(166,255,250,1) 0%, rgba(255,150,182,1) 91%) no-repeat;
+    background: -o-linear-gradient(25deg, rgba(166,255,250,1) 0%, rgba(255,150,182,1) 91%) no-repeat;
+    background: -ms-linear-gradient(25deg, rgba(166,255,250,1) 0%, rgba(255,150,182,1) 91%) no-repeat;
+    background: linear-gradient(25deg, rgba(166,255,250,1) 0%, rgba(255,150,182,1) 91%) no-repeat;  
     background-clip: border-box;
     border-radius: 3px;
-    transition: 0.2s;
     cursor: pointer;
+    filter: alpha(opacity=70); /* For IE8 and earlier */
+    opacity: 0.7;
+    -webkit-transition: all 0.5s ease; /* Safari and Chrome */
+    -moz-transition: all 0.5s ease; /* Firefox */
+    -ms-transition: all 0.5s ease; /* IE 9 */
+    -o-transition: all 0.5s ease; /* Opera */
+    transition: all 0.5s ease;
+    color: #fafafa
 }
 
 #btn-resume:hover {
-    color: #fafafa;
-    background-position: 200px;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+    opacity: 1;
+    color: #333;
+
 }
 
 .resume-subtitle {
@@ -375,8 +398,8 @@ footer {
     }
 }
 
-footer a {
-    color: #fafafa;
+footer a, footer p {
+    color: palevioletred !important;
 }
 
 footer a:hover {
