@@ -21,6 +21,9 @@ function callWhenLoaded(query, callBack){
 
 let main = document.querySelector("main");
 
+/**
+ * Adds background blur when modal is shown and removes when closed.
+ */
 function openModal () {
     main.style.filter = "blur(2px)";
     callWhenLoaded(".modal.show", backDrop => {
@@ -32,6 +35,11 @@ document.querySelectorAll("#projects .card").forEach((projectBtn) => {
     projectBtn.onclick = openModal;
 });
 
+// todo: modal open and close animation
+
+// document.querySelectorAll(".modal").forEach((modal) => {
+//   modal.addClass("fade");
+// });
 
 
 /** Copy text on click */

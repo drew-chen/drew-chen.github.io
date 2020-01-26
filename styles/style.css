@@ -12,11 +12,11 @@ body  {
 main {
     background: #fafafa;
     margin-bottom: 200px;
-    -webkit-transition: filter 0.25s ease; /* Safari and Chrome */
-    -moz-transition: filter 0.25s ease; /* Firefox */
-    -ms-transition: filter 0.25s ease; /* IE 9 */
-    -o-transition: filter 0.25s ease; /* Opera */
-    transition: filter 0.25s ease;
+    -webkit-transition: filter 0.15s ease; /* Safari and Chrome */
+    -moz-transition: filter 0.15s ease; /* Firefox */
+    -ms-transition: filter 0.15s ease; /* IE 9 */
+    -o-transition: filter 0.15s ease; /* Opera */
+    transition: filter 0.15s ease;
 }
 
 @media only screen and (max-width: 767.98px) {
@@ -395,6 +395,7 @@ footer a {
 footer a:hover {
     color: palevioletred;
 }
+
 footer p {
     margin: 0;
 }
