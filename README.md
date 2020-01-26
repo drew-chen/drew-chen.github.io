@@ -23,4 +23,3 @@ is a work in progress.
 * HTML, CSS, JavaScript
 
 * [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-

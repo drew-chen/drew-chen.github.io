@@ -11,6 +11,11 @@ body  {
 main {
     background: #fafafa;
     margin-bottom: 200px;
+    -webkit-transition: filter 0.15s ease; /* Safari and Chrome */
+    -moz-transition: filter 0.15s ease; /* Firefox */
+    -ms-transition: filter 0.15s ease; /* IE 9 */
+    -o-transition: filter 0.15s ease; /* Opera */
+    transition: filter 0.15s ease;
 }
 
 @media only screen and (max-width: 767.98px) {
@@ -286,6 +291,17 @@ header {
     height: 100vh;
     border: none;
     border-radius: 0;
+    padding: 0 30px;
+}
+
+.modal-backdrop {
+    -webkit-transition: all 0.25s ease; /* Safari and Chrome */
+    -moz-transition: all 0.25s ease; /* Firefox */
+    -ms-transition: all 0.25s ease; /* IE 9 */
+    -o-transition: all 0.25s ease; /* Opera */
+    transition: all 0.25s ease;
+    background-color: white;
+    opacity: 0.7;
 }
 
 .modal-dialog {
@@ -311,10 +327,6 @@ header {
     right: 20px;
     margin: 0;
     padding: 0;
-}
-
-.modal-content {
-    padding: 0 30px;
 }
 
 .modal-footer {
@@ -406,6 +418,7 @@ footer a, footer p {
 footer a:hover {
     color: palevioletred;
 }
+
 footer p {
     margin: 0;
 }
