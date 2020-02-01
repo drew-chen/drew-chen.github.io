@@ -1,8 +1,3 @@
-let resumeBtn = document.getElementById("btn-resume");
-resumeBtn.onclick = () => {
-    window.open("Andrew Chen - Resume.pdf", "_blank");
-} 
-
 /**
  * Waits until an element is loaded before calling a function on that element.
  * @param {string} query The selector of the element.
