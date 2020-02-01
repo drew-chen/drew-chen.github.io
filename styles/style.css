@@ -11,11 +11,11 @@ body  {
 main {
     background: #fafafa;
     margin-bottom: 200px;
-    -webkit-transition: filter 0.15s ease; /* Safari and Chrome */
-    -moz-transition: filter 0.15s ease; /* Firefox */
-    -ms-transition: filter 0.15s ease; /* IE 9 */
-    -o-transition: filter 0.15s ease; /* Opera */
-    transition: filter 0.15s ease;
+    -webkit-transition: filter 0.15s linear; /* Safari and Chrome */
+    -moz-transition: filter 0.15s linear; /* Firefox */
+    -ms-transition: filter 0.15s linear; /* IE 9 */
+    -o-transition: filter 0.15s linear; /* Opera */
+    transition: filter 0.15s linear;
 }
 
 @media only screen and (max-width: 767.98px) {
@@ -85,18 +85,18 @@ header {
 }
 
 #scroll-up-icon {
-    bottom: 2%;
+    bottom: 3%;
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
-    animation: 3s linear 0.1s infinite alternate up-and-down;
+    animation: 3s ease-in-out 0.1s infinite alternate up-and-down;
 }
 
 @keyframes up-and-down {
     from {
         bottom: 3%;
     }
-    top {
+    to {
         bottom: 1%;
     }
 }
