@@ -339,13 +339,15 @@ header {
     padding: 0;
 }
 
+#resume a {
+    cursor: pointer;
+}
 #btn-resume {
     padding: 0;
     border: none;
     outline: none;
     background-clip: border-box;
     border-radius: 3px;
-    cursor: pointer;
     -webkit-transition: all 0.5s ease; /* Safari and Chrome */
     -moz-transition: all 0.5s ease; /* Firefox */
     -ms-transition: all 0.5s ease; /* IE 9 */
@@ -363,6 +365,7 @@ header {
 #btn-resume > label {
     align-self: center;
     margin: 20px 40px 10px 40px;
+    cursor: pointer;
 }
 
 #btn-resume > label > h2 {
