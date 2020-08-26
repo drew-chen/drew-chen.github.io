@@ -57,6 +57,7 @@ h2 {
 
 h3 {
     font-size: 1.5rem;
+    text-transform: lowercase;
 }
 
 h4 {
@@ -292,6 +293,7 @@ header {
 
 .modal-title {
   color: palevioletred;
+  font-size: 1.3rem;
 }
 
 .modal-content {
