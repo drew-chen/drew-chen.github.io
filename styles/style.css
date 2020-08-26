@@ -18,6 +18,17 @@ main {
     transition: filter 0.15s linear;
 }
 
+a {
+  color: palevioletred;
+  text-decoration: none;
+}
+
+a:hover {
+  color: palevioletred;
+  text-decoration: underline;
+}
+
+
 @media only screen and (max-width: 767.98px) {
     main {
         margin-bottom: 300px;
@@ -165,10 +176,6 @@ header {
     position: relative;
 }
 
-#about a {
-    color: palevioletred;
-}
-
 /* || Projects */
 
 #projects {
@@ -289,6 +296,7 @@ header {
 
 .modal-content {
     border: none;
+    border-radius: 0;
     padding: 0 30px;
 }
 
@@ -447,29 +455,6 @@ header {
     transform: scaleY(1);
 }
 
-.resume-subtitle {
-    margin: 50px 0;
-}
-
-#resume ul {
-    list-style: none;
-    padding: 0;
-    position: relative;
-    left: 11px;
-}
-
-#resume ul::before {
-    content: '';
-    background: #333;
-    display: inline-block;
-    position: absolute;
-    width: 1px;
-    height: 100%;
-    z-index: 1px;
-    left: -9px;
-    border-radius: 4px;
-}
-
 /* || Contact */
 
 footer {
@@ -488,14 +473,6 @@ footer {
     footer {
         height: 300px;
     }
-}
-
-footer a, footer p {
-    color: palevioletred !important;
-}
-
-footer a:hover {
-    color: palevioletred;
 }
 
 footer p {
