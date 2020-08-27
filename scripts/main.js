@@ -11,33 +11,26 @@ function callWhenLoaded(query, callBack){
       } else {
         callWhenLoaded(query);
       }
-    }, 500)
+    }, 50)
 }
 
-let main = document.querySelector("main");
+const mainElement = document.querySelector("main");
 
 /**
- * Adds background blur when modal is shown and removes when closed.
+ * Adds background blur when modal is shown. This blur is removed when closed.
  */
-function openModal () {
-    main.style.filter = "blur(2px)";
-    callWhenLoaded(".modal.show", backDrop => {
-        backDrop.onclick = () => {main.style.filter = "none"};
+function addBackgroundBlur() {
+    mainElement.style.filter = "blur(2px)";
+    // Callback removes background blur on click of the opened modal.
+    callWhenLoaded(".modal.show", backdrop => {
+        backdrop.onclick = () => { mainElement.style.filter = "none" };
     });
 }
 
 document.querySelectorAll("#projects .card").forEach((projectBtn) => {
-    projectBtn.onclick = openModal;
+    projectBtn.onclick = addBackgroundBlur;
 });
 
-// todo: modal open and close animation
-
-// document.querySelectorAll(".modal").forEach((modal) => {
-//   modal.addClass("fade");
-// });
-
-
-/** Copy text on click */
-// document.querySelectorAll(".click-copy").forEach((link) => {
-//     //todo
-// });
+if (window.location.hash === "#projects") {
+    location.hash = "#" + hash;
+}
