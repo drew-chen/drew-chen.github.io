@@ -255,6 +255,7 @@ header {
     transition: filter 0.7s ease, transform 0.5s ease;
     filter: brightness(57%);
 }
+
 .card:focus .project-background,
 .card:hover .project-background {
     -webkit-transform: scale(1.03); /* Safari and Chrome */
@@ -264,12 +265,6 @@ header {
     transform: scale(1.03);
     /* brightness must be first to prevent flickering in Microsoft Edge */
     filter: brightness(75%) blur(2px);
-}
-
-/* Parallax scroll does not work well with zooming in */
-#this-website-card:active #this-website-img,
-#this-website-card:hover #this-website-img {
-  filter: blur(2px);
 }
 
 #social-network-img {
