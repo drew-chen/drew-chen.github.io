@@ -15,5 +15,3 @@ is a work in progress.
 ## built with
 
 * JavaScript, HTML, CSS, and Bootstrap
-
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)

@@ -4,6 +4,15 @@ html {
   scroll-behavior: smooth;
 }
 
+/**
+ * Disable smooth scrolling when users have prefers-reduced-motion enabled
+ */
+ @media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
 body  {
     line-height: 1.4;
     font-family: 'Varela Round', sans-serif;
