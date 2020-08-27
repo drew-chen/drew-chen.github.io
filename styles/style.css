@@ -1,5 +1,9 @@
 /* || General styles */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body  {
     line-height: 1.4;
     font-family: 'Varela Round', sans-serif;
@@ -251,7 +255,12 @@ header {
     transform: scale(1.03);
     /* brightness must be first to prevent flickering in Microsoft Edge */
     filter: brightness(75%) blur(2px);
-    text-decoration: underline;
+}
+
+/* Parallax scroll does not work well with zooming in */
+#this-website-card:active #this-website-img,
+#this-website-card:hover #this-website-img {
+  filter: blur(2px);
 }
 
 #social-network-img {
