@@ -29,6 +29,7 @@ function addBackgroundBlur() {
         backdrop.onclick = () => {
             mainElement.style.filter = "none"
             document.activeElement.blur()
+
         };
     });
 }
@@ -36,6 +37,10 @@ function addBackgroundBlur() {
 document.querySelectorAll("#projects .card").forEach((projectBtn) => {
     projectBtn.onclick = addBackgroundBlur;
 });
+
+document.querySelectorAll(".close").forEach((closeModalBtn) => {
+    closeModalBtn.onclick = () => document.activeElement.blur();
+});            
 
 /** 
  * Gets the hash parameter in the url on load. If the parameter matches a project
