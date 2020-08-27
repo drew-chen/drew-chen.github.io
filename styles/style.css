@@ -240,7 +240,7 @@ header {
     -ms-transition: filter 0.5s ease, transform 0.5s ease; /* IE 9 */
     -o-transition: filter 0.5s ease, transform 0.5s ease; /* Opera */
     transition: filter 0.5s ease, transform 0.5s ease;
-    filter: brightness(55%);
+    filter: brightness(60%);
 }
 
 .card:hover .project-background {
@@ -250,7 +250,7 @@ header {
     -o-transform: scale(1.03); /* Opera */
     transform: scale(1.03);
     /* brightness must be first to prevent flickering in Microsoft Edge */
-    filter: brightness(65%) blur(2px);
+    filter: brightness(70%) blur(2px);
 }
 
 #social-network-img {

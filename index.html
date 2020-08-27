@@ -107,16 +107,16 @@
                 <h3 class="card-title">Social Network</h3>
                 <p class="card-text">Ruby on Rails, HTML, CSS, Bootstrap</p>
               </div>
-              <div id="social-network" class="project-background"></div>
+              <div id="social-network-img" class="project-background"></div>
             </div>
           </div>
           <div class="col-md-6 col-sm-12">
-            <div class="card" data-toggle="modal" data-target="#git-description">
+            <div class="card" data-toggle="modal" data-target="#relationaldb-description">
               <div class="project-label text-center">
-                <h3 class="card-title">Git</h3>
+                <h3 class="card-title">Relational Database</h3>
                 <p class="card-text">Java</p>
               </div>
-              <div id="git" class="project-background"></div>
+              <div id="relationaldb-img" class="project-background"></div>
             </div>
           </div>
         </div>
@@ -127,7 +127,27 @@
                 <h3 class="card-title">Sketch</h3>
                 <p class="card-text">JavaScript, HTML, CSS</p>
               </div>
-              <div id="sketch" class="project-background"></div>
+              <div id="sketch-img" class="project-background"></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="card" data-toggle="modal" data-target="#git-description">
+              <div class="project-label text-center">
+                <h3 class="card-title">Git</h3>
+                <p class="card-text">Java</p>
+              </div>
+              <div id="git-img" class="project-background"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="card" data-toggle="modal" data-target="#this-website-description">           
+              <div class="project-label text-center">
+                <h3 class="card-title">this website</h3>
+                <p class="card-text">JavaScript, HTML, CSS, Bootstrap</p>
+              </div>
+              <div id="this-website-img"></div>
             </div>
           </div>
           <div class="col-md-6 col-sm-12">
@@ -136,18 +156,7 @@
                 <h3 class="card-title">Cipher Machine</h3>
                 <p class="card-text">Java</p>
               </div>
-              <div id="cipher-machine" class="project-background"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div id="this-website-box" class="col-sm-12">
-            <div class="card" data-toggle="modal" data-target="#this-website-description">           
-              <div class="project-label text-center">
-                <h3 class="card-title">this website</h3>
-                <p class="card-text">JavaScript, HTML, CSS, Bootstrap</p>
-              </div>
-              <div id="this-website"></div>
+              <div id="cipher-machine-img" class="project-background"></div>
             </div>
           </div>
         </div>
@@ -370,7 +379,66 @@
         </div>
       </div>
     </div>
-  </div>      
+  </div>
+  <div class="modal" id="relationaldb-description" role="dialog">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">RelationalDb</h4>
+          <button type="button" class="close" data-dismiss="modal">
+            <i class="las la-times"></i>
+          </button>
+        </div>
+        <div class="modal-body align-items-end">
+          <div class="row">
+            <div class="col-md-2">
+              <h3>Summary</h3>
+            </div>
+            <div class="col-md-10">
+              <ul>
+                <li>Created a fully functioning and optimized relational database management system.</li>
+              </ul>
+            </div> 
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <h3>Skills</h3>
+            </div>
+            <div class="col-md-10">
+              <p>Java</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <h3>Features</h3>
+            </div>
+            <div class="col-md-10">
+              This database implements:
+              <ul>
+                <li>B+ tree indices</li>
+                <li>
+                  Join algorithms: Block nested loop join (BNLJ), sort merge join, and grace hash join
+                </li>
+                <li>
+                  Relational query optimizer similar to the 
+                  <a href="https://link.springer.com/referenceworkentry/10.1007%2F978-0-387-39940-9_384">
+                    System R optimizer
+                  </a>
+                </li>
+                <li>Multigranularity locking for concurrency (project picture).</li>
+                <li>Database recovery using write-ahead logging</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="https://github.com/drew-chen/sketch" target="_blank">view code</a>
+          | <!-- separates the links -->
+          <a href="https://drew-chen.github.io/sketch/" target="_blank">view demo</a>
+        </div>
+      </div>
+    </div>
+  </div>    
   <div class="modal" id="cipher-machine-description" role="dialog">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
@@ -400,18 +468,9 @@
                 <p>Java</p>
               </div>
             </div>
-            <div class="row">
-              <!-- TODO: Cipher Machine features -->
-              <!-- <div class="col-md-2">
-                <h3>Features</h3>
-              </div>
-              <div class="col-md-10">
-              
-              </div> -->
-            </div>
           </div>
         <div class="modal-footer">
-          <p>private repo: contact for code</p>
+          <p>class project: contact for code</p>
         </div>
       </div>
     </div>
@@ -442,15 +501,6 @@
               <div class="col-md-10">
                 JavaScript, HTML, CSS, Bootstrap
               </div>
-            </div>
-            <div class="row">
-              <!-- TODO: Personal Website features -->
-              <!-- <div class="col-md-2">
-                <h3>Features</h3>
-              </div>
-              <div class="col-md-10">
-              
-              </div> -->
             </div>
           </div>
         <div class="modal-footer">
