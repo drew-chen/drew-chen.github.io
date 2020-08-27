@@ -19,13 +19,13 @@ main {
 }
 
 a {
-  color: palevioletred;
-  text-decoration: none;
+    color: palevioletred;
+    text-decoration: none;
 }
 
 a:hover {
-  color: palevioletred;
-  text-decoration: underline;
+    color: palevioletred;
+    text-decoration: underline;
 }
 
 
@@ -240,7 +240,7 @@ header {
     -ms-transition: filter 0.5s ease, transform 0.5s ease; /* IE 9 */
     -o-transition: filter 0.5s ease, transform 0.5s ease; /* Opera */
     transition: filter 0.5s ease, transform 0.5s ease;
-    filter: brightness(65%);
+    filter: brightness(55%);
 }
 
 .card:hover .project-background {
@@ -253,19 +253,23 @@ header {
     filter: brightness(65%) blur(2px);
 }
 
-#social-network {
+#social-network-img {
     background-image: url("../images/social-network.jpg");
 }
 
-#git {
+#git-img {
     background-image: url("../images/git.png");
 }
 
-#sketch {
+#sketch-img {
     background-image: url("../images/sketch.png") ;
 }
 
-#cipher-machine {
+#relationaldb-img {
+    background-image: url("../images/relationaldb.png") ;
+}
+
+#cipher-machine-img {
     background-image: url("../images/cipher-machine.jpg");
 }
 
@@ -273,7 +277,7 @@ header {
     padding: 0 4px;
 }
 
-#this-website {
+#this-website-img {
     width: 100%;
     height: 100%;
     background: url("../images/this-website.png") center/cover fixed no-repeat;
