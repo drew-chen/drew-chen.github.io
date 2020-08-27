@@ -235,12 +235,12 @@ header {
     background-repeat: no-repeat;
     background-clip: content-box;
     background-size: cover;
-    -webkit-transition: filter 0.5s ease, transform 0.5s ease; /* Safari and Chrome */
-    -moz-transition: filter 0.5s ease, transform 0.5s ease; /* Firefox */
-    -ms-transition: filter 0.5s ease, transform 0.5s ease; /* IE 9 */
-    -o-transition: filter 0.5s ease, transform 0.5s ease; /* Opera */
-    transition: filter 0.5s ease, transform 0.5s ease;
-    filter: brightness(60%);
+    -webkit-transition: filter 0.7s ease, transform 0.5s ease; /* Safari and Chrome */
+    -moz-transition: filter 0.7s ease, transform 0.5s ease; /* Firefox */
+    -ms-transition: filter 0.7s ease, transform 0.5s ease; /* IE 9 */
+    -o-transition: filter 0.7s ease, transform 0.5s ease; /* Opera */
+    transition: filter 0.7s ease, transform 0.5s ease;
+    filter: brightness(57%);
 }
 .card:focus .project-background,
 .card:hover .project-background {
@@ -250,34 +250,31 @@ header {
     -o-transform: scale(1.03); /* Opera */
     transform: scale(1.03);
     /* brightness must be first to prevent flickering in Microsoft Edge */
-    filter: brightness(70%) blur(2px);
+    filter: brightness(75%) blur(2px);
+    text-decoration: underline;
 }
 
-#social-network {
+#social-network-img {
     background-image: url("../images/social-network.jpg");
 }
 
-#git {
+#git-img {
     background-image: url("../images/git.png");
 }
 
-#sketch {
+#sketch-img {
     background-image: url("../images/sketch.png") ;
 }
 
-#relationaldb {
+#relationaldb-img {
     background-image: url("../images/relationaldb.png") ;
 }
 
-#cipher-machine {
+#cipher-machine-img {
     background-image: url("../images/cipher-machine.jpg");
 }
 
-#this-website-box {
-    padding: 0 4px;
-}
-
-#this-website {
+#this-website-img {
     width: 100%;
     height: 100%;
     background: url("../images/this-website.png") center/cover fixed no-repeat;
@@ -402,6 +399,7 @@ header {
     position: relative;
 }
 
+#btn-resume:focus,
 #btn-resume:hover {
     color: #333;
 }
@@ -441,6 +439,7 @@ header {
     position: absolute;
 }
 
+#btn-resume:focus > .top,
 #btn-resume:hover > .top {
     transform-origin: right;
     transform: scaleX(0);
@@ -457,6 +456,7 @@ header {
 
 }
 
+#btn-resume:focus > .bottom,
 #btn-resume:hover > .bottom {
     transform-origin: left;
     transform: scaleX(0);
@@ -473,6 +473,7 @@ header {
     position: absolute;
 }
 
+#btn-resume:focus > .left,
 #btn-resume:hover > .left {
     transform-origin: bottom;
     transform: scaleY(1);
@@ -488,6 +489,7 @@ header {
     position: absolute;
 }
 
+#btn-resume:focus > .right,
 #btn-resume:hover > .right {
     transform-origin: top;
     transform: scaleY(1);
