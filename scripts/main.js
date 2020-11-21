@@ -57,13 +57,16 @@ function focusUrlHashProject () {
     ])
     if (projectDescriptionIds.has(hashUrl)) {
         const projectsSection = document.getElementById("projects")
-        projectsSection.scrollIntoView({
-            behavior: 'smooth',
-        })
+        projectsSection.scrollIntoView()
         const project = document.getElementById(`${hashUrl}-card`)
         project.focus()
     }
 
 }
 
+// Focus a specific project when the website is loaded, or when the url changes.
 focusUrlHashProject()
+callWhenLoaded("#projects", () => {
+    window.addEventListener("hashchange", focusUrlHashProject)
+});
+
