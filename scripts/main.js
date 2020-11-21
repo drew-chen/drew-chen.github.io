@@ -26,21 +26,16 @@ function addBackgroundBlur() {
      * Furthermore, it removes card focus.
      */
     callWhenLoaded(".modal.show", backdrop => {
-        backdrop.onclick = () => {
+        backdrop.addEventListener('click', () => {
             mainElement.style.filter = "none"
             document.activeElement.blur()
-
-        };
+        });
     });
 }
 
 document.querySelectorAll("#projects .card").forEach((projectBtn) => {
-    projectBtn.onclick = addBackgroundBlur;
+    projectBtn.addEventListener('click', addBackgroundBlur);
 });
-
-document.querySelectorAll(".close").forEach((closeModalBtn) => {
-    closeModalBtn.onclick = () => document.activeElement.blur();
-});            
 
 /** 
  * Gets the hash parameter in the url on load. If the parameter matches a project
