@@ -30,7 +30,7 @@ function addBackgroundBlur(projectBtn) {
     callWhenLoaded(".modal.show", backdrop => {
         backdrop.addEventListener('click', () => {
             mainElement.style.filter = "none";
-            // projectBtn.blur();
+            projectBtn.blur();
         });
     });
 }
