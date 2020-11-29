@@ -13,9 +13,9 @@ html {
 	}
 }
 
-body  {
+body {
     line-height: 1.4;
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     color: #333;
     background: #fafafa;
 }
@@ -57,19 +57,21 @@ section {
 }
 
 h1 {
+    font-size: 3rem;
+    font-family: 'Nunito Sans', sans-serif;
     text-transform: uppercase;
-    letter-spacing: 0.2rem;
+    letter-spacing: 1.1rem;
 }
 
 h2 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 3rem;
     margin: 30px;
     text-transform: lowercase;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-transform: lowercase;
 }
 
@@ -190,10 +192,14 @@ header {
     position: relative;
 }
 
+#about-me-description {
+    font-family: 'Varela Round', sans-serif;
+}
+
 /* || Projects */
 
 #projects {
-    background: #f4f4f4;
+    background: #f0f0f0;
     border-radius: 24px;
 }
 
@@ -208,7 +214,7 @@ header {
 
 #projects .card {
     border: none;
-    border-radius: 3px;
+    border-radius: 0;
     margin: 5px 0;
     color: #fafafa;
     height: 320px;
@@ -295,8 +301,8 @@ header {
 /* || Project descriptions modals */
 
 .modal-title {
-  color: palevioletred;
-  font-size: 1.3rem;
+    color: palevioletred;
+    font-size: 1.3rem;
 }
 
 .modal-content {
@@ -320,6 +326,7 @@ header {
 }
 
 .modal-content ul {
+    font-family: 'Varela Round', sans-serif;
     display: table;
     list-style-position: outside;
 }

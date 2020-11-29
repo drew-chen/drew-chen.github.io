@@ -21,7 +21,6 @@ const mainElement = document.querySelector("main");
  * @param {Object} projectBtn The dom object representing the project card button.
  */
 function addBackgroundBlur(projectBtn) {
-    console.log(projectBtn);
     mainElement.style.filter = "blur(2px)";
     /**
      * Callback removes background blur on click of the opened modal.
