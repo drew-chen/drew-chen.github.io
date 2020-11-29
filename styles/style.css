@@ -214,7 +214,7 @@ header {
 
 #projects .card {
     border: none;
-    border-radius: 0;
+    border-radius: 2px;
     margin: 5px 0;
     color: #fafafa;
     height: 320px;
@@ -253,7 +253,7 @@ header {
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-clip: content-box;
+    background-clip: border-box;
     background-size: cover;
     -webkit-transition: filter 0.7s ease, transform 0.5s ease; /* Safari and Chrome */
     -moz-transition: filter 0.7s ease, transform 0.5s ease; /* Firefox */
